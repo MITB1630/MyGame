@@ -7,3 +7,5 @@ shoot the one that is closest.  The project involved the use of photoshop to cre
 C#
 Unity 3D
 (6 months) (Unity Version 2020 - Free)  
+
+(Jan 2022) This game is being reworked.  Please check out the 2022 Rework Branch for updates!
