@@ -114,9 +114,9 @@ public class GameManagment : Singleton<GameManagment>
               
               
             }
-            int randNum = Random.Range(-2, 2);
+       
             //this.cpuTxt.text = "CPU: <color=" + damageLevel + ">" + value.ToString() + "</color>%";
-            this.cpuTxt.text = "CPU: <color=" + damageLevel + ">" + (value + randNum).ToString() + "</color>%";
+            this.cpuTxt.text = "CPU: <color=" + damageLevel + ">" + (value).ToString() + "</color>%";
 
         }
 
@@ -161,9 +161,9 @@ public class GameManagment : Singleton<GameManagment>
 
 
 
-            int randNum = Random.Range(-1, 2);
+          
             //this.cpuTxt.text = "CPU: <color=" + damageLevel + ">" + value.ToString() + "</color>%";
-            this.diskTxt.text = "DISK: <color=" + damageLevel + ">" + (value + randNum).ToString() + "</color>%";
+            this.diskTxt.text = "DISK: <color=" + damageLevel + ">" + (value).ToString() + "</color>%";
         }
 
     }
@@ -207,9 +207,8 @@ public class GameManagment : Singleton<GameManagment>
 
 
 
-            int randNum = Random.Range(-1, 4);
             //this.cpuTxt.text = "CPU: <color=" + damageLevel + ">" + value.ToString() + "</color>%";
-            this.memoryTxt.text = "MEMORY: <color=" + damageLevel + ">" + (value + randNum).ToString() + "</color>%";
+            this.memoryTxt.text = "MEMORY: <color=" + damageLevel + ">" + (value).ToString() + "</color>%";
         }
 
     }
@@ -296,7 +295,7 @@ public class GameManagment : Singleton<GameManagment>
 
     void Start()
     {
-        Bytes = 5000;
+        Bytes = 500;
         SystemIntegrity = 100;
         Disk = 4;
         Memory = 3;
@@ -504,19 +503,19 @@ public class GameManagment : Singleton<GameManagment>
 
                 case 0:
                     type = "BugV";
-                    health = 50;
+                    health = 100;
                     break;
                 case 1:
                     type = "WormV";
-                    health = 75;
+                    health = 125;
                     break;
                 case 2:
                     type = "BotV";
-                    health = 150;
+                    health = 200;
                     break;
                 case 3:
                     type = "SpyV";
-                    health = 100;
+                    health = 225;
                     break;
             }
 
@@ -525,7 +524,7 @@ public class GameManagment : Singleton<GameManagment>
 
             if(wave % 3 == 0)
             {
-                additionalHealth += 15;
+                additionalHealth += 25;
             }
             activeViruses.Add(virus);
 

@@ -17,8 +17,6 @@ public abstract class Tower : MonoBehaviour
 
 
 
-
-
     [SerializeField]
     private string towerType;
 

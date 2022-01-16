@@ -238,56 +238,10 @@ public class Viruses : MonoBehaviour
     {
         if(IsActive)
         {
-            if(damageType == Element.Standard)
-            {
-                if(this.name == "BotV")
-                {
-
-                    healthStat.CurrentVal -= (damage - 15);
-                }
-                else
-                {
-                    healthStat.CurrentVal -= damage;
-                }
-
-
-
-            }
-            else if (damageType == Element.Sniper)
-            {
-                if(this.name == "BotV" || this.name == "SpyV")
-                {
-                    healthStat.CurrentVal -= (damage + 15);
-                }
-                else
-                {
-                    healthStat.CurrentVal -= damage;
-                }
-
-
-          
-            }
-            else if(damageType == Element.Corrupt)
-            {
-
-
-                healthStat.CurrentVal -= damage;
-
-            }
-            else if (damageType == Element.Slow)
-            {
-
-
-                healthStat.CurrentVal -= damage;
-
-            }
-
-
-
-
-
-
-
+           
+                
+            healthStat.CurrentVal -= damage;
+                         
             if (healthStat.CurrentVal <= 0)
             {
                 GameManagment.Instance.Bytes += 50;
