@@ -9,3 +9,5 @@ Unity 3D
 (6 months) (Unity Version 2020 - Free)  
 
 (Jan 2022) This game is being reworked.  Please check out the 2022 Rework Branch for updates!
+
+Fun fact, it's not very good.  
